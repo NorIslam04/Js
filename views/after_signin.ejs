@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+    <style>
+        /* Style pour le corps de la page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Fond sombre pour le mode sombre */
+            color: #000000; /* Couleur de texte blanche */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Style pour le texte */
+        .thank-you-text {
+            font-size: 28px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #222; /* Fond légèrement plus foncé */
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Ombre légère */
+            color: #000000; /* Couleur de texte jaune */
+        }
+
+        /* Style pour le texte en mode sombre */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #282828; /* Fond sombre */
+            }
+
+            .thank-you-text {
+                background-color: #7f7f7f; /* Fond encore plus sombre */
+                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.198); /* Ombre légère */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-text">
+        THANK YOU !<br> Your data has been submitted to the database successfully<br> Name of User : <%= arrobj.at(-1).Username %><br> Gender : <%= gender %>
+     </div>
+</body>
+</html>

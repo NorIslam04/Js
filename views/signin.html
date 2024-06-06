@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Couleur de fond sombre */
+            color: #fff; /* Couleur du texte clair */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #333; /* Couleur de fond du conteneur */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Ombre légère */
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 3px solid #4c6aaf; /* Bordure orange */
+            background-color: #434343; /* Couleur de fond plus foncée */
+            color: #fff; /* Couleur du texte clair */
+            border-radius: 30px;
+            box-sizing:border-box;
+        }
+        input[type="submit"] {
+            background-color: #4c6aaf; /* Couleur du bouton */
+            color: white;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign In</h1>
+        
+        <form action="/" method="POST">
+
+            <label>Username:</label>
+            <input type="text" name="Username" required>
+
+            <label>Password:</label>
+            <input type="password" name="Password" required>
+
+            <label>Phone-Number:</label>
+            <input type="tel" name="Phone_Number" required>
+
+            <label>Gender:</label>
+            <select name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <input type="submit" value="Send To Data Base">
+        </form>
+    </div>
+</body>
+</html>

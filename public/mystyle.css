@@ -1,0 +1,62 @@
+/* CSS pour le formulaire de connexion */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte clair */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #333; /* Couleur de fond du conteneur */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Ombre légère */
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFA500; /* Couleur de titre orange */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #4c6aaf; /* Bordure orange */
+    background-color: #444; /* Couleur de fond plus foncée */
+    color: #fff; /* Couleur du texte clair */
+    border-radius: 20px;
+    box-sizing:border-box;
+}
+
+/* Style pour les options de la boîte de sélection */
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+input[type="submit"] {
+    background-color: #4c6aaf; /* Couleur du bouton */
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
