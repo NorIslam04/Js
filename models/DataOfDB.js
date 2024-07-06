@@ -22,7 +22,7 @@ const schema_male =new Schema({
 
 // export the model
 module.exports = {
-    FemaleData: mongoose.model("female_data",schema_female) ,
+    FemaleData: mongoose.model("female_data",schema_female),
     MaleData: mongoose.model("male_data",schema_male)
 };
 
