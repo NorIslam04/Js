@@ -17,8 +17,6 @@ const schema_male =new Schema({
 });
 
  
-// Create a model based on that schema
-
 
 // export the model
 module.exports = {
